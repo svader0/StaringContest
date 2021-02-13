@@ -55,7 +55,23 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 build cmake_object_order_depends_target_StaringContest: phony || CMakeFiles\StaringContest.dir
 
-build CMakeFiles\StaringContest.dir\src\main.cpp.obj: CXX_COMPILER__StaringContest_Debug ..\..\..\src\main.cpp || cmake_object_order_depends_target_StaringContest
+build CMakeFiles\StaringContest.dir\src\Main.cpp.obj: CXX_COMPILER__StaringContest_Debug ..\..\..\src\Main.cpp || cmake_object_order_depends_target_StaringContest
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -IC:\dev\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = CMakeFiles\StaringContest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StaringContest.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\StaringContest.dir\
+  TARGET_PDB = StaringContest.pdb
+
+build CMakeFiles\StaringContest.dir\src\Game.cpp.obj: CXX_COMPILER__StaringContest_Debug ..\..\..\src\Game.cpp || cmake_object_order_depends_target_StaringContest
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -IC:\dev\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = CMakeFiles\StaringContest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StaringContest.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\StaringContest.dir\
+  TARGET_PDB = StaringContest.pdb
+
+build CMakeFiles\StaringContest.dir\src\ScoreLoader.cpp.obj: CXX_COMPILER__StaringContest_Debug ..\..\..\src\ScoreLoader.cpp || cmake_object_order_depends_target_StaringContest
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   INCLUDES = -IC:\dev\vcpkg\installed\x64-windows\include
   OBJECT_DIR = CMakeFiles\StaringContest.dir
@@ -71,7 +87,7 @@ build CMakeFiles\StaringContest.dir\src\main.cpp.obj: CXX_COMPILER__StaringConte
 #############################################
 # Link the executable StaringContest.exe
 
-build StaringContest.exe: CXX_EXECUTABLE_LINKER__StaringContest_Debug CMakeFiles\StaringContest.dir\src\main.cpp.obj | C$:\dev\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_dnnd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_highguid.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_mld.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_objdetectd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_photod.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_stitchingd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_videod.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_videoiod.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_imgcodecsd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_calib3dd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_features2dd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_flannd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_imgprocd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_cored.lib
+build StaringContest.exe: CXX_EXECUTABLE_LINKER__StaringContest_Debug CMakeFiles\StaringContest.dir\src\Main.cpp.obj CMakeFiles\StaringContest.dir\src\Game.cpp.obj CMakeFiles\StaringContest.dir\src\ScoreLoader.cpp.obj | C$:\dev\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_dnnd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_highguid.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_mld.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_objdetectd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_photod.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_stitchingd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_videod.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_videoiod.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_imgcodecsd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_calib3dd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_features2dd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_flannd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_imgprocd.lib C$:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_cored.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = C:\dev\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_dnnd.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_highguid.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_mld.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_objdetectd.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_photod.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_stitchingd.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_videod.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_videoiod.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_imgcodecsd.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_calib3dd.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_features2dd.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_flannd.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_imgprocd.lib  C:\dev\vcpkg\installed\x64-windows\debug\lib\opencv_cored.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

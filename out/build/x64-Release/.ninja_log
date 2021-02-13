@@ -3,3 +3,7 @@
 341	921	634947520	LilyTin.exe	5e6882341bfb415a
 1	337	634947541	CMakeFiles/StaringContest.dir/main.cpp.obj	8bd3d85581ec1421
 338	862	634947541	StaringContest.exe	b0407b1cb1ab5e10
+4	327	634950123	CMakeFiles/StaringContest.dir/src/ScoreLoader.cpp.obj	82ccf4669480d3d
+0	632	634950123	CMakeFiles/StaringContest.dir/src/Main.cpp.obj	c998398408d0b9f9
+3	713	634950123	CMakeFiles/StaringContest.dir/src/Game.cpp.obj	a95d2148459f5da3
+713	1837	634950123	StaringContest.exe	ecbdd4611153078e

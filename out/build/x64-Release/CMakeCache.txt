@@ -307,6 +307,9 @@ OPENGL_gl_LIBRARY:STRING=opengl32
 //GLU library for win32
 OPENGL_glu_LIBRARY:STRING=glu32
 
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=C:/dev/vcpkg/installed/x64-windows/share/opencv
+
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=C:/dev/Staring_Contest/out/build/x64-Release
 
@@ -621,6 +624,8 @@ CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_FLAC:INTERNAL=[C:/dev/vcpkg/installed/x64-windows/lib/FLAC.lib][C:/dev/vcpkg/installed/x64-windows/include][v()]
 //Details about finding OpenAL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[C:/dev/vcpkg/installed/x64-windows/lib/OpenAL32.lib][C:/dev/vcpkg/installed/x64-windows/include/AL][v()]
+//Details about finding OpenCV
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[C:/dev/vcpkg/installed/x64-windows][v4.3.0()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][c ][v()]
 //Details about finding VORBIS

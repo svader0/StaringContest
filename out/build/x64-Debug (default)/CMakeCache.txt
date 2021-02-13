@@ -382,6 +382,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_TOOLCHAIN_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Directory for CMakeRC include files
+CMRC_INCLUDE_DIR:INTERNAL=C:/dev/Staring_Contest/out/build/x64-Debug (default)/_cmrc/include
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[C:/dev/vcpkg/installed/x64-windows][v4.3.0()]
 //Install the dependencies listed in your manifest:
@@ -392,10 +394,15 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[C:/dev/vcpkg/installed/x64-windows
 VCPKG_MANIFEST_INSTALL:INTERNAL=OFF
 //ADVANCED property for variable: VCPKG_VERBOSE
 VCPKG_VERBOSE-ADVANCED:INTERNAL=1
+//Path to CMakeRC script
+_CMRC_SCRIPT:INTERNAL=C:/dev/Staring_Contest/CMakeRC.cmake
+//CMakeRC version. Used for checking for conflicts
+_CMRC_VERSION:INTERNAL=2.0.0
 //Making sure VCPKG_MANIFEST_MODE doesn't change
 _INTERNAL_CHECK_VCPKG_MANIFEST_MODE:INTERNAL=OFF
 //The path to the PowerShell implementation to use.
 _VCPKG_POWERSHELL_PATH:INTERNAL=C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
 //_vcpkg_get_directory_name_of_file_above: _VCPKG_ROOT_DIR
 _VCPKG_ROOT_DIR:INTERNAL=C:/dev/vcpkg
+cmrc_hpp:INTERNAL=C:/dev/Staring_Contest/out/build/x64-Debug (default)/_cmrc/include/cmrc/cmrc.hpp
 

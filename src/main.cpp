@@ -1,9 +1,14 @@
-﻿#include <iostream>
-#include <opencv2/opencv.hpp>
+#include <iostream>
+#include <time.h>
 
+#include "Game.hpp"
+#include "ScoreLoader.hpp"
 
-int main(int argc, char** argv)
+using namespace std;
+
+int main()
 {
-    std::cout << "Hello GunnHacks!";
-    return 0;
+	Game game;
+	game.run();
+	return 0;
 }
