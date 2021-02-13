@@ -1,3 +1,0 @@
-C:/dev/Staring_Contest/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir
-C:/dev/Staring_Contest/out/build/x64-Debug (default)/CMakeFiles/StaringContest.dir
-C:/dev/Staring_Contest/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir

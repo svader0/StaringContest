@@ -9,7 +9,7 @@ add_executable(StaringContest "src/Main.cpp"
 							  "src/Game.cpp"
 							  "src/Game.hpp"
 							  "src/ScoreLoader.cpp"
-							  "src/ScoreLoader.hpp")
+							  "src/ScoreLoader.hpp" "src/Score.hpp")
 
 target_link_libraries(StaringContest sfml-graphics)
 target_link_libraries(StaringContest ${OpenCV_LIBS})
