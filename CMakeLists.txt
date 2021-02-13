@@ -14,5 +14,4 @@ add_executable(StaringContest "src/Main.cpp"
 target_link_libraries(StaringContest sfml-graphics)
 target_link_libraries(StaringContest ${OpenCV_LIBS})
 
-file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/res
-        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/res DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
