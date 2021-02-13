@@ -1,9 +1,0 @@
-# ninja log v5
-0	351	634947552	CMakeFiles/StaringContest.dir/main.cpp.obj	ade1ac15c8d6dea2
-352	911	634947552	StaringContest.exe	fdbce23343d8550c
-0	461	634947743	CMakeFiles/StaringContest.dir/src/main.cpp.obj	8fdb1598666dd5ea
-461	924	634947743	StaringContest.exe	9cae3b2616e8b970
-1	1000	634947890	CMakeFiles/StaringContest.dir/src/main.cpp.obj	8fdb1598666dd5ea
-1000	1880	634947890	StaringContest.exe	52ef4ffa3abfdb8a
-1	979	634947950	CMakeFiles/StaringContest.dir/src/main.cpp.obj	8fdb1598666dd5ea
-979	1380	634947950	StaringContest.exe	52ef4ffa3abfdb8a
