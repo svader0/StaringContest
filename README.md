@@ -1,4 +1,4 @@
-![Staring Contest](res/logo.png "Staring Contest")
+![Staring Contest](res/logoWhite.png "Staring Contest")
 
 Stare at yourself using the power of computer vision!
 This project was created for the 2021 [GunnHacks](https://www.gunnhacks.com/)
