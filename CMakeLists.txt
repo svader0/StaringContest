@@ -1,6 +1,8 @@
 ﻿cmake_minimum_required(VERSION 3.0)
 project(StaringContest)
 
+set(CMAKE_TOOLCHAIN_FILE ./vcpkg/scripts/buildsystems/vcpkg.cmake)
+
 find_package(SFML 2.5 COMPONENTS graphics REQUIRED)
 find_package(OpenCV REQUIRED)
 

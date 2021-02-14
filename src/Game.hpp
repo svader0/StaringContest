@@ -26,6 +26,8 @@ private:
 	cv::Mat m_imgIn, m_imgRGBA;
 	cv::VideoCapture m_cap = cv::VideoCapture(0);
 
+	sf::Texture m_logoTexture;
+	sf::Sprite m_logoSprite;
 	sf::Image m_image;
 	sf::Texture m_texture;
 	

@@ -3,6 +3,7 @@
 
 Game::Game() 
 {
+	m_logoTexture.loadFromFile("res\\logo.png");
 	m_window.create(sf::VideoMode(800, 700), "Staring Contest");
 	m_notoSans.loadFromFile("res\\NotoSansJP-Medium.otf");
 	m_eyeCascade.load("res\\cascade_eye.xml");
@@ -29,7 +30,6 @@ void Game::run()
 
 void Game::update()
 {
-	
 	Score m_currentScore(difftime(time(0), m_startTime));
 
 	/*
@@ -84,6 +84,11 @@ void Game::update()
 	m_texture.loadFromImage(m_image);
 	m_sprite.setTexture(m_texture);
 
+	
+	m_logoSprite.setTexture(m_logoTexture);
+	m_logoSprite.setPosition(sf::Vector2f(m_window.getSize().x - m_logoSprite.getGlobalBounds().width,0));
+	m_logoSprite.setScale(sf::Vector2f(0.7f, 0.7f));
+
 	/*
 		set the score text to the current scores
 	*/
@@ -102,21 +107,25 @@ void Game::update()
 	*/
 	m_text_currentScore.setFont(m_notoSans);
 	m_text_currentScore.setCharacterSize(24);
-	m_text_currentScore.setFillColor(sf::Color::Red);
-	m_text_currentScore.setPosition(0, m_window.getSize().y - 90);
+	m_text_currentScore.setFillColor(sf::Color::White);
+	m_text_currentScore.setPosition(5, m_window.getSize().y - 90);
 
 	m_text_highScore.setFont(m_notoSans);
 	m_text_highScore.setCharacterSize(24);
-	m_text_highScore.setFillColor(sf::Color::Red);
-	m_text_highScore.setPosition(0, m_window.getSize().y - 50);
+	m_text_highScore.setFillColor(sf::Color::White);
+	m_text_highScore.setPosition(5, m_window.getSize().y - 50);
+
 
 	/*
 		clear the window, draw the objects on there, and display them.
 	*/
 	m_window.clear();
+	
 	m_window.draw(m_sprite);
 	m_window.draw(m_text_currentScore);
 	m_window.draw(m_text_highScore);
+	m_window.draw(m_logoSprite);
+
 	m_window.display();
 
 }
