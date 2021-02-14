@@ -20,11 +20,6 @@ vcpkg install opencv:x64-windows
 #### CMAKE
 
 This project is built using [CMAKE](https://cmake.org/).
-```bash
-mkdir build
-cd build
-cmake ..
-```
 CMake may ask you for the locations of its CMake Config files. If you install with vcpkg, those can be found here:
 ```
 ...vcpkg\installed\x64-windows\share\opencv
