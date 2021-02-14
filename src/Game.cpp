@@ -85,6 +85,7 @@ void Game::update()
 	m_sprite.setTexture(m_texture);
 
 	
+
 	m_logoSprite.setTexture(m_logoTexture);
 	m_logoSprite.setPosition(sf::Vector2f(m_window.getSize().x - m_logoSprite.getGlobalBounds().width,0));
 	m_logoSprite.setScale(sf::Vector2f(0.7f, 0.7f));

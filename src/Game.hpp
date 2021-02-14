@@ -15,7 +15,7 @@ class Game
 private:
 
 	ScoreLoader m_sc;
-
+	sf::Image m_icon;
 
 	sf::RenderWindow m_window;
 	sf::Event m_event;
