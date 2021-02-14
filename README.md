@@ -12,7 +12,7 @@ You can download the game [***here***](https://github.com/TruuMoo/StaringContest
 
 ## Build
 #### Dependencies
-This project requires that you install [OpenCV](https://opencv.org/) and [SFML](https://www.sfml-dev.org/).
+If you wish to build this project yourself, you must install [OpenCV](https://opencv.org/) and [SFML](https://www.sfml-dev.org/).
 Personally, I recommend using [vcpkg](https://github.com/Microsoft/vcpkg) to install them both.
 
 ```bash
