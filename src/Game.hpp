@@ -11,16 +11,17 @@
 
 class Game
 {
-public:
-	std::vector<cv::Rect> eyes;
 	
 private:
 
 	ScoreLoader m_sc;
 
+
 	sf::RenderWindow m_window;
 	sf::Event m_event;
 	sf::Text m_text_currentScore, m_text_highScore;
+
+	std::vector<cv::Rect> m_eyes;
 	cv::CascadeClassifier m_eyeCascade;
 	cv::Mat m_imgIn, m_imgRGBA;
 	cv::VideoCapture m_cap = cv::VideoCapture(0);
@@ -33,13 +34,11 @@ private:
 
 	time_t m_startTime = time(0);
 	Score m_currentScore;
-
-	time_t startTime = time(0);
 	
 public:
 
-	void update();
 	Game();
+	void update();
 	void run();
 };
 
