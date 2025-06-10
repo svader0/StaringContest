@@ -7,9 +7,6 @@ hackathon.
 
 You can download the game [***here***](https://github.com/TruuMoo/StaringContest/releases/tag/1.0).
 
-## Screenshots
-![](res/sc1.png)
-
 ## Build
 #### Dependencies
 If you wish to build this project yourself, you must install [OpenCV](https://opencv.org/) and [SFML](https://www.sfml-dev.org/).
